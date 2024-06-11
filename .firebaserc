@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "job-assignment-11",
+    "e": "job-assignment-11"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}

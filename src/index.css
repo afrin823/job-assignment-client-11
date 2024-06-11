@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a.active{
+    color:darkcyan;
+    border: 2px solid darkcyan;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+.pagenation button{
+    margin-right: 10px;
+    
+
+}
+.pagenation .selected {
+    background-color: orange;
+    width: 25px;
+    border-radius: 5px
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
