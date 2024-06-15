@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../Firebase/AuthProvider";
-import logo from "../../../public/group-study-4029949-3345550.webp";
+
 
 const Navber = () => {
   //--------------------
@@ -59,11 +59,11 @@ const Navber = () => {
       <NavLink className="mr-5" to="/contact">
         ContactUs
       </NavLink>
-      <NavLink className="mr-5" to="/about">
-        AboutUs
-      </NavLink>
       <NavLink className="mr-5" to="/signin">
         login
+      </NavLink>
+      <NavLink className="mr-5" to="/about">
+        AboutUs
       </NavLink>
     </div>
   );
@@ -96,7 +96,7 @@ const Navber = () => {
       </div>
       <div className="flex-1">
         <div className="flex items-center">
-          <img className="w-56" src="https://i.ibb.co/hVNjhvW/assignment-logo-275-14657-removebg-preview.png" alt="" />
+          <img className="w-32" src="https://i.ibb.co/T8M7fx6/assignment-sign-assignment-round-ribbon-sticker-assignment-tag-2-AT4-RJD-removebg-preview.png" alt="" />
        
 
           
@@ -162,55 +162,6 @@ const Navber = () => {
       </div>
     </div>
 
-    //         {user ? (
-    //           <>
-    //             <div
-    //               className="tooltip tooltip-bottom"
-    //               data-tip={user.displayName}
-    //             >
-    //               <div
-    //                 tabIndex={0}
-    //                 role="button"
-    //                 className="btn mr-2 btn-ghost btn-circle avatar"
-    //               >
-    //                 <div className="w-10 rounded-full ">
-    //                   <img alt="logo" src={user.photoURL} />
-    //                 </div>
-    //               </div>
-    //             </div>
-    //             <Link to="/signup">
-    //               <button
-    //                 onClick={handleLogOut}
-    //                 className="btn text-2xl font-semibold"
-    //               >
-    //                 Sign Out
-    //               </button>
-    //             </Link>
-    //           </>
-    //         ) : (
-    //           <>
-    //             <div
-    //               tabIndex={0}
-    //               role="button"
-    //               data-tip="hello"
-    //               className="btn mr-2 btn-ghost btn-circle avatar  "
-    //             >
-    //               <div className="w-10 rounded-full ">
-    //                 {/* <img alt="logo" src={logo} /> */}
-    //               </div>
-    //             </div>
-
-    //             <Link to="/signin">
-    //               <button className="btn text-2xl font-semibold">
-    //                 Sign In
-    //               </button>
-    //             </Link>
-    //           </>
-    //         )}
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 

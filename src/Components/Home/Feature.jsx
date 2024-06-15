@@ -40,7 +40,18 @@ const Feature = () => {
             return (
               <div key={item?._id}>
                 <div className="w-full max-w-sm px-4 py-3 bg-base-300 rounded-md shadow-md hover:scale-[1.05] transition-all">
-                  <div className="flex items-center justify-between">
+              
+
+                  <div>
+                  
+                    <div className=" mt-3 mb-10 h-[200px]">
+                      <img className="rounded-md" src={item?.photo} alt="" />
+                    </div>
+                    <h1 className="mt-2 text-lg font-semibold  ">
+                      {item?.titleName}
+                    </h1>
+                    
+                    <div className="flex items-center justify-between">
                     <span className="text-xs font-light  ">
                       Deadline: {item?.processingTime}
                     </span>
@@ -51,15 +62,6 @@ const Feature = () => {
                       {item?.level}
                     </span>
                   </div>
-
-                  <div>
-                    <h1 className="mt-2 text-lg font-semibold  ">
-                      {item?.titleName}
-                    </h1>
-
-                    <div className=" mt-3 mb-10 h-[200px]">
-                      <img className="rounded-md" src={item?.photo} alt="" />
-                    </div>
 
                     <p className="mt-2 text-sm  ">
                       {item?.description.slice(0, 90)}

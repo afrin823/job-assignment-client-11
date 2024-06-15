@@ -36,7 +36,7 @@ const CreateAssigment = () => {
     };
     //  console.log(newAdd);
 
-    fetch("https://wish-kappa.vercel.app/assigment", {
+    fetch("http://localhost:5000/assignment", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -65,8 +65,25 @@ const CreateAssigment = () => {
             Create Assigment
           </h1>
           <form onSubmit={handelAddAssigment}>
-            {/* 1  */}
-            <div className="flex  mb-5">
+            {/* 1  */}            
+            <div className="flex gap-3  mb-5">
+            <div className="form-control w-full ">
+                <label className="label">
+                  <span className="label-text">Your Name</span>
+                </label>
+                <label className="input-group">
+                  <input
+                    type="name"
+                    name="name"
+                    defaultValue={user?.displayName}
+                    disabled
+                    placeholder="Enter Your Name"
+                    className="input input-bordered w-full "
+                  />
+                </label>
+              </div>
+
+
               <div className="form-control w-full mr-5">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -83,21 +100,7 @@ const CreateAssigment = () => {
                 </label>
               </div>
 
-              <div className="form-control w-full ">
-                <label className="label">
-                  <span className="label-text">Your Name</span>
-                </label>
-                <label className="input-group">
-                  <input
-                    type="name"
-                    name="name"
-                    defaultValue={user?.displayName}
-                    disabled
-                    placeholder="your name"
-                    className="input input-bordered w-full "
-                  />
-                </label>
-              </div>
+          
             </div>
             {/* 2  */}
             <div className="flex  mb-5">
