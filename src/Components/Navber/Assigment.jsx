@@ -113,12 +113,13 @@ const Assigment = () => {
   //-------------
 
   return (
-    <div className="">
+    <div className="text-center">
+      
       <select
         onChange={(e) => setFilterData(e.target.value)}
-        className="select w-full max-w-xs font-bold text-xl mt-5 mb-5"
+        className="select w-full  max-w-xs font-bold text-xl mt-5 mb-5"
       >
-        <option disabled hidden selected className="">
+        <option disabled hidden selected className="text-blue-400">
           Assigment Level
         </option>
         <option value="Easy">Easy</option>
@@ -130,8 +131,19 @@ const Assigment = () => {
         {data?.map((item) => {
           return (
             <div key={item?._id}>
-              <div className="w-full max-w-sm px-4 py-3 bg-base-300 rounded-md shadow-md hover:scale-[1.05] transition-all">
-                <div className="flex items-center justify-between">
+              <div className="w-full h-full max-w-sm px-4 py-3 bg-base-300 rounded-md shadow-md hover:scale-[1.05] transition-all">
+             
+                <div>               
+
+                  <div className=" mt-3 mb-10 h-[200px]">
+                    <img className="rounded-md w-full h-full" src={item?.photo} alt="" />
+                  </div>
+
+                  <h1 className="mt-2 text-lg font-semibold  ">
+                    {item?.titleName}
+                  </h1>
+
+                  <div className="flex items-center justify-between">
                   <span className="text-xs font-light  ">
                     Deadline: {item?.processingTime}
                   </span>
@@ -139,35 +151,26 @@ const Assigment = () => {
                     Total Mark: {item?.mark}
                   </span>
 
-                  <span className="px-3 py-1 text-blue-800 uppercase bg-blue-200 rounded-full ">
+                  <span className="px-3 py-2 text-blue-800 uppercase bg-blue-200 rounded-full ">
                     {item?.level}
                   </span>
                 </div>
 
-                <div>
-                  <h1 className="mt-2 text-lg font-semibold  ">
-                    {item?.titleName}
-                  </h1>
-
-                  <div className=" mt-3 mb-10 h-[200px]">
-                    <img className="rounded-md" src={item?.photo} alt="" />
-                  </div>
-
-                  <p className="mt-2 text-sm  ">
+                  <p className="mt-2 text-sm  py-2">
                     {item?.description.slice(0, 90)}
                   </p>
                   <div className="flex gap-5 mt-3">
                     <Link to={`/ditels/${item?._id}`}>
-                      <button className="btn bg-blue-400">View</button>
+                      <button className="btn btn-outline btn-success">View</button>
                     </Link>
 
                     <Link to={`/update/${item?._id}`}>
-                      <button className="btn bg-green-400">Updata</button>
+                      <button className="btn btn-outline btn-warning">Updata</button>
                     </Link>
 
                     <button
                       onClick={() => handeldelete(item?._id, item?.email)}
-                      className="btn bg-red-400"
+                      className="btn btn-outline btn-secondary"
                     >
                       Delete
                     </button>
@@ -180,8 +183,8 @@ const Assigment = () => {
       </div>
 
       <div className="mt-10 mb-10 text-center pagenation font-semibold">
-        <p className=" mb-2 font-semibold">Current Page:{currentpage}</p>
-        <button onClick={handelPre}>Prev</button>
+        <p className=" mb-2 text-2xl text-gray-500 font-semibold">Current Page:{currentpage}</p>
+        <button className="text-gray-600" onClick={handelPre}>Prev</button>
 
         {pages.map((pages) => (
           <button
@@ -191,7 +194,7 @@ const Assigment = () => {
             {pages}
           </button>
         ))}
-        <button onClick={handelNext}>Next</button>
+        <button className=" px-3 text-green-400" onClick={handelNext}>Next</button>
         <select value={itemsPage} onChange={handelPageChange} name="" id="">
           <option value="5">5</option>
           <option value="10">10</option>

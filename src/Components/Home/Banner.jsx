@@ -27,8 +27,9 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
-                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <h1 className="mb-5 text-5xl font-bold">Find assignment topics 
+                </h1>
+                <p className="mb-5">The introduction clearly presents the main argument; the conclusion wraps up all loose ends and reinforces important ideas..</p>
                 <button className="btn btn-primary">Get Started</button>
               </div>
             </div>
@@ -39,7 +40,7 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
-                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                <h1 className="mb-5 text-5xl font-bold">Tips for Writing Assignments</h1>
                 <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                 <button className="btn btn-primary">Get Started</button>
               </div>
@@ -51,7 +52,7 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
-                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                <h1 className="mb-5 text-5xl font-bold">start an assignment</h1>
                 <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
                 <button className="btn btn-primary">Get Started</button>
               </div>
@@ -63,8 +64,8 @@ const Banner = () => {
             <div className="hero-overlay bg-opacity-60"></div>
             <div className="hero-content text-center text-neutral-content">
               <div className="max-w-md">
-                <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <h1 className="mb-5 text-5xl font-bold">assignment structure</h1>
+                <p className="mb-5">Introduction—acts as a roadmap for the reader. Body—presents points to support your argument. Conclusion—summarises main points discussed.</p>
                 <button className="btn btn-primary">Get Started</button>
               </div>
             </div>

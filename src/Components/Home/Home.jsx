@@ -1,3 +1,4 @@
+import AssignmentPrice from "./AssignmentPrice";
 import Banner from "./Banner";
 import FAQ from "./FAQ";
 import Feature from "./Feature";
@@ -9,7 +10,8 @@ const Home = () => {
       <Banner></Banner>
       <Feature></Feature>
       <FAQ></FAQ>
-      <Web></Web>    
+      <Web></Web>   
+      <AssignmentPrice></AssignmentPrice> 
     </div>
   );
 };

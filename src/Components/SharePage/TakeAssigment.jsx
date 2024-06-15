@@ -61,8 +61,8 @@ const TakeAssigment = () => {
   return (
     <div>
       <div className="md:ml-32">
-        <section className="p-6 md:w-[600px]  bg-base-300 rounded-md shadow-md flex-1 md:min-h-[350px]">
-          <h1 className="text-center mt-5 mb-5 font-bold text-2xl bg-base-300">
+        <section className="p-6 md:w-[600px] mx-auto my-24  bg-base-300 rounded-md shadow-md flex-1 md:min-h-[350px]">
+          <h1 className="text-center text-gray-700 mt-5 mb-5 font-bold text-2xl bg-base-300">
             Assigment Submit
           </h1>
           <hr />
@@ -98,7 +98,7 @@ const TakeAssigment = () => {
               </div>
             </div>
 
-            <div className="flex justify-end mt-6">
+            <div className="flex justify-center  mt-6">
               <input
                 className="btn"
                 type="submit"

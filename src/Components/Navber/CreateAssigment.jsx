@@ -61,7 +61,7 @@ const CreateAssigment = () => {
     <div>
       <div>
         <div className="p-8">
-          <h1 className="text-4xl text-center m-10 font-extrabold">
+          <h1 className="text-4xl text-gray-500 text-center m-10 font-extrabold">
             Create Assigment
           </h1>
           <form onSubmit={handelAddAssigment}>

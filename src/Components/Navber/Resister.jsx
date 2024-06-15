@@ -158,7 +158,7 @@ const Resister = () => {
         <div className="hero-content flex-col">
           <div className="card shrink-0  md:w-[600px] lg:w-[600px]  shadow-2xl bg-base-100">
             <form onSubmit={handleSignUp} className="card-body">
-              <h1 className="text-center text-3xl font-bold ">Sing Up</h1>
+              <h1 className="text-center text-3xl font-bold ">__Sing Up__</h1>
               <div className="form-control font-semibold">
                 <label className="label">
                   <span className="label-text">Name</span>
