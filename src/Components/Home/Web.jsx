@@ -4,73 +4,69 @@ const Web = () => {
   return (
     <div>
       <h1 className="text-3xl text-center font-bold mt-5 mb-5 ">All Feature</h1>
-      <section className="p-4 lg:p-8 bg-base-200 ">
-        <div className="container mx-auto space-y-12">
-          <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-            <img
-              src="https://i.ibb.co/3vnW7ys/download-3.jpg"
-              alt=""
-              className="h-80 dark:bg-gray-500 aspect-video"
-            />
-            <div className="flex flex-col justify-center flex-1 p-6 bg-base-300">
-              <h3 className="text-3xl font-bold">MERN stack developer</h3>
-              <p className="my-6 dark:text-gray-600">
-                Becoming a MERN (MongoDB, Express.js, React.js, Node.js) stack
-                developer involves mastering the technologies within this stack
-                to build full-stack web applications. Here's a breakdown of what
-                each technology entails and how you can approach learning them
-              </p>
-              <button type="button" className="self-start">
-                Action
-              </button>
-            </div>
+      <section className="py-6 sm:py-12 dark:bg-gray-100 dark:text-gray-800">
+        <div className="container p-6 mx-auto space-y-8">
+          <div className="space-y-2 text-center">
+            <h2 className="text-3xl font-bold">Partem reprimique an pro</h2>
+            <p className="font-serif text-sm dark:text-gray-600">Qualisque erroribus usu at, duo te agam soluta mucius.</p>
           </div>
-          <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row-reverse">
-            <img
-              src="https://i.ibb.co/PT3KWpV/download.jpg"
-              alt=""
-              className="h-80 dark:bg-gray-500 aspect-video"
-            />
-            <div className="flex flex-col justify-center flex-1 p-6 bg-base-300">
-              <h3 className="text-3xl font-bold">xpress.js</h3>
-              <p className="my-6 dark:text-gray-600">
-                Learning Path: Basics of Node.js: Familiarize yourself with
-                Node.js fundamentals, including event-driven architecture and
-                asynchronous programming. Express Routing: Learn how to define
-                routes, handle requests, and send responses using Express.
-                Middleware: Understand the concept of middleware and how to use
-                it for tasks such as authentication, error handling, and
-                logging. Integration with MongoDB: Explore how to connect
-                Express.js applications to MongoDB using libraries like Mongoose
-                for object modeling.
-              </p>
-              <button type="button" className="self-start">
-                Action
-              </button>
-            </div>
-          </div>
-          <div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
-            <img
-              src="https://i.ibb.co/nrJLWnp/download-4.jpg"
-              alt=""
-              className="h-80 dark:bg-gray-500 aspect-video"
-            />
-            <div className="flex flex-col justify-center flex-1 p-6 bg-base-300">
-              <h3 className="text-3xl font-bold">React.js</h3>
-              <p className="my-6 dark:text-gray-600">
-                Learning Path: Basic Concepts: Understand the core concepts of
-                React.js, including components, JSX, state, and props. Component
-                Lifecycle: Learn about the lifecycle methods of React components
-                and how to manage component state. React Router: Explore React
-                Router for client-side routing in single-page applications.
-                State Management: Learn about state management solutions like
-                Redux or Context API for managing application state in larger
-                applications.
-              </p>
-              <button type="button" className="self-start">
-                Action
-              </button>
-            </div>
+          <div className="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+            <article className="flex flex-col dark:bg-gray-50">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://i.ibb.co/TR6xzdb/enable-custom-link-image-gallery.png" />
+              </a>
+              <div className="flex flex-col flex-1 p-6">
+                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                <a rel="noopener noreferrer" href="#" className="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Convenire</a>
+                <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
+                <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
+                  <span>June 1, 2020</span>
+                  <span>2.1K views</span>
+                </div>
+              </div>
+            </article>
+            <article className="flex flex-col dark:bg-gray-50">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://i.ibb.co/G2MftBn/webpage-title.jpg" />
+              </a>
+              <div className="flex flex-col flex-1 p-6">
+                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                <a rel="noopener noreferrer" href="#" className="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Convenire</a>
+                <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
+                <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
+                  <span>June 2, 2020</span>
+                  <span>2.2K views</span>
+                </div>
+              </div>
+            </article>
+            <article className="flex flex-col dark:bg-gray-50">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://i.ibb.co/DzLLwTt/image-32-1024x526.png" />
+              </a>
+              <div className="flex flex-col flex-1 p-6">
+                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                <a rel="noopener noreferrer" href="#" className="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Convenire</a>
+                <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
+                <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
+                  <span>June 3, 2020</span>
+                  <span>2.3K views</span>
+                </div>
+              </div>
+            </article>
+            <article className="flex flex-col dark:bg-gray-50">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+                <img alt="" className="object-cover w-full h-52 dark:bg-gray-500" src="https://i.ibb.co/fnfYgRz/velfest-soft-festivity-event-organizer-hero-image-637394-838.jpg" />
+              </a>
+              <div className="flex flex-col flex-1 p-6">
+                <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+                <a rel="noopener noreferrer" href="#" className="text-xs tracking-wider uppercase hover:underline dark:text-violet-600">Convenire</a>
+                <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">Te nulla oportere reprimique his dolorum</h3>
+                <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs dark:text-gray-600">
+                  <span>June 4, 2020</span>
+                  <span>2.4K views</span>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>

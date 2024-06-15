@@ -38,14 +38,14 @@ const Feature = () => {
         <div className=" mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
           {data?.slice(0, limit).map((item) => {
             return (
-              <div key={item?._id}>
-                <div className="w-full max-w-sm px-4 py-3 bg-base-300 rounded-md shadow-md hover:scale-[1.05] transition-all">
+              <div className="w-full" key={item?._id}>
+                <div className="w-full h-full max-w-sm px-6 py-3 bg-base-300 rounded-md shadow-md hover:scale-[1.05] transition-all">
               
 
                   <div>
                   
                     <div className=" mt-3 mb-10 h-[200px]">
-                      <img className="rounded-md" src={item?.photo} alt="" />
+                      <img className="rounded-md w-full h-full" src={item?.photo} alt="" />
                     </div>
                     <h1 className="mt-2 text-lg font-semibold  ">
                       {item?.titleName}
@@ -58,7 +58,7 @@ const Feature = () => {
                     <span className="text-xs font-light  ">
                       Total Mark: {item?.mark}
                     </span>
-                    <span className="px-3 py-1 text-blue-800 uppercase bg-blue-200 rounded-full ">
+                    <span className="px-3 py-1 text-red-800 uppercase bg-red-200 rounded-full ">
                       {item?.level}
                     </span>
                   </div>
@@ -68,7 +68,7 @@ const Feature = () => {
                     </p>
                     <div className="flex gap-5 mt-3">
                       <Link to={`/ditels/${item?._id}`}>
-                        <button className="btn">Touch Me</button>
+                        <button className="btn btn-outline btn-error">Click Me</button>
                       </Link>
                     </div>
                   </div>
