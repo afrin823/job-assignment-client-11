@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import loading from '../../../public/Loading_2.gif'
+import loading from '../../../public/grey_style.gif'
+import TypeWriter from "../TypeWrriter/TypeWriter";
 
 const Feature = () => {
   const [data, setdata] = useState([]);
@@ -27,13 +28,13 @@ const Feature = () => {
       });
   }, []);
   if (!data.length) {
-    return <div className="flex justify-center h-screen items-center"><img src={loading} alt="" /></div>
+    return <div className="flex justify-center h-screen items-center"><img className="w-20" src={loading} alt="" /></div>
   }
   return (
     <div className="mt-5 mb-5">
-      <h1 className="text-3xl text-center font-bold mb-5 ">
-        Special Catagories Section
-      </h1>
+    <div className="text-3xl text-center text-gray-500  font-bold mb-5">
+      <TypeWriter></TypeWriter>
+    </div>
       <div>
         <div className=" mt-10 grid grid-cols-1 md:grid-cols-3 gap-5">
           {data?.slice(0, limit).map((item) => {

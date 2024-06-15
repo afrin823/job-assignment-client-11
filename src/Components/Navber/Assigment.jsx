@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../Firebase/AuthProvider";
-import loading from '../../../public/Loading_2.gif'
+import loading from '../../../public/loder.webp'
 
 const Assigment = () => {
   const { user } = useContext(AuthContext);
@@ -56,7 +56,7 @@ const Assigment = () => {
       });
   }, [filterData]);
   if (!data.length) {
-    return <div className="flex justify-center h-screen items-center"><img src={loading} alt="" /></div>
+    return <div className="flex justify-center h-screen items-center"><img className="w-24" src={loading} alt="" /></div>
   }
 
   //console.log(data);

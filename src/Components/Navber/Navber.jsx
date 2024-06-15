@@ -56,14 +56,11 @@ const Navber = () => {
           </NavLink>
         </>
       )}
-      <NavLink className="mr-5" to="/contact">
-        ContactUs
-      </NavLink>
-      <NavLink className="mr-5" to="/signin">
-        login
-      </NavLink>
       <NavLink className="mr-5" to="/about">
         AboutUs
+      </NavLink>
+      <NavLink className="mr-5" to="/contact">
+        ContactUs
       </NavLink>
     </div>
   );

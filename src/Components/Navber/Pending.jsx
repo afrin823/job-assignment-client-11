@@ -18,7 +18,7 @@ const Pending = () => {
     <div>
       <section className="container px-4 mx-auto pt-12">
         <div className="flex items-center gap-x-3">
-          <h2 className="text-lg font-medium text-gray-800 ">
+          <h2 className="text-2xl  font-bold text-gray-900 ">
             Panding Assigment
           </h2>
 
