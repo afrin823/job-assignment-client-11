@@ -76,7 +76,7 @@ const AuthProvider = ({ children }) => {
       //      //token
       if (currentUser) {
         axios
-          .post("https://wish-kappa.vercel.app/jwt", loggedUser, {
+          .post("http://localhost:4000/jwt", loggedUser, {
             withCredentials: true,
           })
           .then((res) => {
@@ -84,7 +84,7 @@ const AuthProvider = ({ children }) => {
           });
       } else {
         axios
-          .post("https://wish-kappa.vercel.app/logout", loggedUser, {
+          .post("http://localhost:4000/logout", loggedUser, {
             withCredentials: true,
           })
           .then((res) => {

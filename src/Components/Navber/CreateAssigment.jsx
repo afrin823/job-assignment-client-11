@@ -36,7 +36,7 @@ const CreateAssigment = () => {
     };
     //  console.log(newAdd);
 
-    fetch("http://localhost:5000/assignment", {
+    fetch("http://localhost:4000/assignment", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -124,13 +124,7 @@ const CreateAssigment = () => {
                   <span className="label-text">Processing Time</span>
                 </label>
                 <label className="input-group">
-                  {/* <input
-                    type="date"
-                    required
-                    name="processingTime"
-                    placeholder="processing time"
-                    className="input input-bordered w-full "
-                  /> */}
+
                   <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
                 </label>
               </div>
