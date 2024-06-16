@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
+import axios from "axios";
 
 const CreateAssigment = () => {
   const { user } = useContext(AuthContext);
@@ -13,7 +14,7 @@ const CreateAssigment = () => {
 
   //console.log(user.email);
 
-  const handelAddAssigment = (event) => {
+  const handelAddAssigment =async (event) => {
     event.preventDefault();
     const form = event.target;
     const email = form.email.value;
@@ -36,10 +37,16 @@ const CreateAssigment = () => {
     };
     //  console.log(newAdd);
 
+//     try {
+//       const {data }  = await axios.post("http://localhost:4000/assignment", newAdd)
+//     console.log(data);
+//     } catch (error) {
+// console.log(error.message);
+//     }
     fetch("http://localhost:4000/assignment", {
       method: "POST",
       headers: {
-        "content-type": "application/json",
+        'Content-type': 'application/json; charset=UTF-8',
       },
       body: JSON.stringify(newAdd),
     })
