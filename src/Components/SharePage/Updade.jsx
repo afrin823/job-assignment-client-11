@@ -38,7 +38,7 @@ const Updade = () => {
     };
     //   console.log(update);
 
-    fetch(`https://wish-kappa.vercel.app/assigment/${_id}`, {
+    fetch(`http://localhost:4000/assigment/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

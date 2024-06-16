@@ -9,7 +9,7 @@ const Pending = () => {
   //console.log(user.email);
   useEffect(() => {
     axios
-      .get("https://wish-kappa.vercel.app/bids/pending")
+      .get("http://localhost:4000/bids/pending")
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -36,23 +36,23 @@ const Pending = () => {
                     <tr>
                       <th
                         scope="col"
-                        className="py-3.5 px-4 text-sm font-normal text-left rtl:text-right "
+                        className="py-3.5 px-4 text-sm font-bold text-left rtl:text-right "
                       >
-                        <div className="flex items-center gap-x-3">
+                        <div className="flex items-center  gap-x-3">
                           <span>Title</span>
                         </div>
                       </th>
 
                       <th
                         scope="col"
-                        className="px-4 py-3.5 text-sm font-normal text-left rtl:text-right"
+                        className="px-4 py-3.5 text-sm font-bold text-left rtl:text-right"
                       >
                         <span>Examnee Name</span>
                       </th>
 
                       <th
                         scope="col"
-                        className="px-4 py-3.5 text-sm font-normal text-left rtl:text-right"
+                        className="px-4 py-3.5 text-sm font-bold text-left rtl:text-right"
                       >
                         <button className="flex items-center gap-x-2">
                           <span>Main Mark</span>
@@ -61,12 +61,12 @@ const Pending = () => {
 
                       <th
                         scope="col"
-                        className="px-4 py-3.5 text-sm font-normal text-left rtl:text-right"
+                        className="px-4 py-3.5 text-sm font-bold text-left rtl:text-right"
                       >
                         Status
                       </th>
 
-                      <th className="px-4 py-3.5 text-sm font-normal text-left rtl:text-right">
+                      <th className="px-4 py-3.5 text-sm font-bold text-left rtl:text-right">
                         Give Mark
                       </th>
                     </tr>

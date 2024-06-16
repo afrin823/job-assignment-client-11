@@ -67,7 +67,7 @@ const router = createBrowserRouter([
       {
         path: "/assigment",
         element: <Assigment></Assigment>,
-        loader: () => fetch("https://wish-kappa.vercel.app/assigmentCount"),
+        loader: () => fetch("http://localhost:4000/assigmentCount"),
       },
       {
         path: "/ditels/:_id",
@@ -76,13 +76,13 @@ const router = createBrowserRouter([
             <Vew></Vew>
           </PrivateRoute>
         ),
-        loader: () => fetch("https://wish-kappa.vercel.app/assigment"),
+        loader: () => fetch("http://localhost:4000/assigment"),
       },
       {
         path: "/update/:id",
         element: <PrivateRoute><Updade></Updade></PrivateRoute>,
         loader: ({ params }) =>
-          fetch(`https://wish-kappa.vercel.app/assigment/${params.id}`),
+          fetch(`http://localhost:4000/assigment/${params.id}`),
       },
       {
         path: "/takeassigment/:_id",
@@ -93,13 +93,13 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`https://wish-kappa.vercel.app/assigment/${params._id}`),
+          fetch(`http://localhost:4000/assigment/${params._id}`),
       },
       {
         path: "/givemark/:id",
         element: <GiveMark></GiveMark>,
         loader: ({ params }) =>
-          fetch(`https://wish-kappa.vercel.app/bids/${params.id}`),
+          fetch(`http://localhost:4000/bids/${params.id}`),
       },
       {
         path: "/about",

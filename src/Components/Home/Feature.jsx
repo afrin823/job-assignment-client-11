@@ -7,7 +7,7 @@ const Feature = () => {
   const [data, setdata] = useState([]);
   const [limit, setLimit] = useState(6);
   useEffect(() => {
-    fetch(`https://wish-kappa.vercel.app/assigment`, {
+    fetch(`http://localhost:4000/assigment`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

@@ -44,7 +44,7 @@ const Assigment = () => {
 
   // const url=`http://localhost:5000/assigment?product?page=${currentpage}&size=${itemsPage}`;
   //console.log(filterData);
-  const url = `https://wish-kappa.vercel.app/assigment?level=${filterData}&email=${user?.email}`;
+  const url = `http://localhost:4000/assigment?level=${filterData}&email=${user?.email}`;
   useEffect(() => {
     axios
       .get(url, { withCredentials: true })
@@ -87,7 +87,7 @@ const Assigment = () => {
       //    console.log(result);
 
       if (result.isConfirmed) {
-        fetch(`https://wish-kappa.vercel.app/assigment/${id}`, {
+        fetch(`http://localhost:4000/assigment/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
