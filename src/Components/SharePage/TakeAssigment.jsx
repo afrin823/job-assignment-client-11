@@ -37,7 +37,7 @@ const TakeAssigment = () => {
     };
 
     axios
-      .post("https://wish-kappa.vercel.app/bids", infoCollection)
+      .post("http://localhost:4000/bids", infoCollection)
       .then((res) => {
         if (res.data) {
           return Swal.fire({

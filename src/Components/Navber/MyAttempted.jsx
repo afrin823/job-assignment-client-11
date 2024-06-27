@@ -10,7 +10,7 @@ const MyAttempted = () => {
   // console.log(userdata);
   useEffect(() => {
     axios
-      .get(`https://wish-kappa.vercel.app/bid/${user?.email}`)
+      .get(`http://localhost:4000/bid/${user?.email}`)
       .then((res) => {
         setUserData(res.data);
       })

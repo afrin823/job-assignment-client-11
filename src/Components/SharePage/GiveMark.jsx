@@ -6,66 +6,80 @@ import Swal from "sweetalert2";
 const GiveMark = () => {
   const item = useLoaderData();
 
-  const handelMarkSubmited = (event) => {
+  // Log the entire item object to debug
+  console.log("Loaded item:", item);
+
+  const handleMarkSubmitted = (event) => {
     event.preventDefault();
-    // console.log("click");
     const form = event.target;
     const givenMark = form.givemark.value;
     const feedBack = form.feedback.value;
     const status = "completed";
-    //console.log(givemark,feedback);
+
+    if (isNaN(givenMark) || givenMark < 0 || givenMark > 100) {
+      return Swal.fire({
+        title: "Error",
+        text: "Please enter a valid mark between 0 and 100",
+        icon: "error",
+        confirmButtonText: "OK",
+      });
+    }
+
     const finalResult = {
       givenMark,
       feedBack,
       status,
     };
 
+    console.log("Final result:", finalResult);
+
     axios
-      .put(`https://wish-kappa.vercel.app/bids/${item._id}`, finalResult)
+      .put(`http://localhost:4000/bids/${item._id}`, finalResult)
       .then((res) => {
         if (res.data.modifiedCount > 0) {
-          return Swal.fire({
-            title: "success!",
-            text: "Give Mark",
+          Swal.fire({
+            title: "Success!",
+            text: "Mark has been submitted",
             icon: "success",
             confirmButtonText: "Cool",
           });
+          form.reset();
         }
       })
       .catch((err) => {
-        return Swal.fire({
-          title: "error",
+        Swal.fire({
+          title: "Error",
           text: err.message,
           icon: "error",
-          confirmButtonText: "Cool",
+          confirmButtonText: "OK",
         });
       });
   };
+
   return (
-    <div className="">
-      <div className="">
-        <form className="max-w-2xl mx-auto" onSubmit={handelMarkSubmited}>
-          <p className="text-3xl text-center mt-10 mb-5 font-bold bg-base-300">
-            {" "}
-            Give Mark
-          </p>{" "}
+    <div className="container">
+      <div className="form-container">
+        <form className="max-w-2xl mx-auto" onSubmit={handleMarkSubmitted}>
+          <p className="text-3xl text-center mt-10 mb-5 font-bold text-gray-700">
+            __Give Mark__
+          </p>
           <hr />
           <div className="flex flex-col md:flex-row justify-center gap-5 p-4">
             <div>
               <p className="mt-2 mb-2 font-semibold">Give Mark</p>
-              <input type="number" placeholder="Give Mark" name="givemark" />
+              <input type="number" placeholder="Give Mark" name="givemark" className="input" />
             </div>
             <div>
               <p className="mt-2 mb-2 font-semibold">Feedback</p>
               <textarea
                 name="feedback"
-                id=""
-                placeholder="text area"
+                placeholder="Enter your feedback"
+                className="textarea"
               ></textarea>
             </div>
           </div>
           <div className="text-center">
-            <input className="btn " type="submit" value="Submit" />
+            <input className="btn" type="submit" value="Submit" />
           </div>
         </form>
       </div>

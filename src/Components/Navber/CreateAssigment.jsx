@@ -35,14 +35,7 @@ const CreateAssigment = () => {
       mark,
       photo,
     };
-    //  console.log(newAdd);
 
-//     try {
-//       const {data }  = await axios.post("http://localhost:4000/assignment", newAdd)
-//     console.log(data);
-//     } catch (error) {
-// console.log(error.message);
-//     }
     fetch("http://localhost:4000/assignment", {
       method: "POST",
       headers: {

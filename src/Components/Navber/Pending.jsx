@@ -69,6 +69,7 @@ const Pending = () => {
                       <th className="px-4 py-3.5 text-sm font-bold text-left rtl:text-right">
                         Give Mark
                       </th>
+                      
                     </tr>
                   </thead>
                   <tbody className=" ">
