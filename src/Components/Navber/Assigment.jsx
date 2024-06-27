@@ -33,7 +33,7 @@ const Assigment = () => {
     }
   };
 
-  const url = `http://localhost:4000/assignment?level=${filterData}&email=${user?.email}&page=${currentpage}&size=${itemsPage}`;
+  const url = `https://job-assignmnet-server.vercel.app/assignment?level=${filterData}&email=${user?.email}&page=${currentpage}&size=${itemsPage}`;
   useEffect(() => {
     axios
       .get(url, { withCredentials: true })
@@ -65,7 +65,7 @@ const Assigment = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:4000/assignment/${id}`, {
+        fetch(`https://job-assignmnet-server.vercel.app/assignment/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

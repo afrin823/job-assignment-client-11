@@ -76,7 +76,7 @@ const AuthProvider = ({ children }) => {
       //      //token
       // if (currentUser) {
       //   axios
-      //     .post("http://localhost:4000/jwt", loggedUser, {
+      //     .post("https://job-assignmnet-server.vercel.app/jwt", loggedUser, {
       //       withCredentials: true,
       //     })
       //     .then((res) => {
@@ -85,7 +85,7 @@ const AuthProvider = ({ children }) => {
       // } 
       // else {
       //   axios
-      //     .post("http://localhost:4000/logout", loggedUser, {
+      //     .post("https://job-assignmnet-server.vercel.app/logout", loggedUser, {
       //       withCredentials: true,
       //     })
       //     .then((res) => {

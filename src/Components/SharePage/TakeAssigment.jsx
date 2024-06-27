@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { AuthContext } from "../Firebase/AuthProvider";
-import { useLoaderData } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
+import { useLoaderData } from "react-router-dom";
 
 const TakeAssigment = () => {
   const item = useLoaderData();
@@ -37,7 +37,7 @@ const TakeAssigment = () => {
     };
 
     axios
-      .post("http://localhost:4000/bids", infoCollection)
+      .post("https://wish-kappa.vercel.app/bids", infoCollection)
       .then((res) => {
         if (res.data) {
           return Swal.fire({

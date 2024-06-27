@@ -34,7 +34,7 @@ const GiveMark = () => {
     console.log("Final result:", finalResult);
 
     axios
-      .put(`http://localhost:4000/bids/${item._id}`, finalResult)
+      .put(`https://job-assignmnet-server.vercel.app/bids/${item._id}`, finalResult)
       .then((res) => {
         if (res.data.modifiedCount > 0) {
           Swal.fire({

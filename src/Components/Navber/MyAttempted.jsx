@@ -10,7 +10,7 @@ const MyAttempted = () => {
   // console.log(userdata);
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/bid/${user?.email}`)
+      .get(`https://job-assignmnet-server.vercel.app/bid/${user?.email}`)
       .then((res) => {
         setUserData(res.data);
       })

@@ -9,7 +9,7 @@ const Pending = () => {
   //console.log(user.email);
   useEffect(() => {
     axios
-      .get("http://localhost:4000/bids/pending")
+      .get("https://job-assignmnet-server.vercel.app/bids/pending")
       .then((res) => setData(res.data))
       .catch((err) => console.log(err));
   }, []);
@@ -77,6 +77,7 @@ const Pending = () => {
                       <tr key={item._id}>
                         <td className="px-4 py-4 text-sm  whitespace-nowrap">
                           {item.title}
+                          <h2>MongoDB Fundamentals	</h2>
                         </td>
 
                         <td className="px-4 py-4 text-sm  whitespace-nowrap">
@@ -89,6 +90,7 @@ const Pending = () => {
                              text-xs"
                             >
                               {item.mark}
+                              <h3>85</h3>
                             </p>
                           </div>
                         </td>

@@ -38,7 +38,7 @@ const Updade = () => {
     };
     //   console.log(update);
 
-    fetch(`http://localhost:4000/assigment/${_id}`, {
+    fetch(`https://job-assignmnet-server.vercel.app/assigment/${_id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

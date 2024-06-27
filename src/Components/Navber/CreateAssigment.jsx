@@ -36,7 +36,7 @@ const CreateAssigment = () => {
       photo,
     };
 
-    fetch("http://localhost:4000/assignment", {
+    fetch("https://job-assignmnet-server.vercel.app/assignment", {
       method: "POST",
       headers: {
         'Content-type': 'application/json; charset=UTF-8',
