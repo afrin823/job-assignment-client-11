@@ -33,7 +33,7 @@ const Assigment = () => {
     }
   };
 
-  const url = `https://job-assignmnet-server.vercel.app/assignment?level=${filterData}&email=${user?.email}&page=${currentpage}&size=${itemsPage}`;
+  const url = `https://job-assignmnet-server.vercel.app/assignment?level=${filterData}&email=${user?.email}`;
   
   useEffect(() => {
     axios
