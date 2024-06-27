@@ -37,7 +37,7 @@ const TakeAssigment = () => {
     };
 
     axios
-      .post("https://wish-kappa.vercel.app/bids", infoCollection)
+      .post("https://job-assignmnet-server.vercel.app/bids", infoCollection)
       .then((res) => {
         if (res.data) {
           return Swal.fire({

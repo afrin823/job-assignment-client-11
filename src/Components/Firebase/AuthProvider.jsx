@@ -73,25 +73,6 @@ const AuthProvider = ({ children }) => {
       setUser(currentUser);
       setLoading(false);
 
-      //      //token
-      // if (currentUser) {
-      //   axios
-      //     .post("https://job-assignmnet-server.vercel.app/jwt", loggedUser, {
-      //       withCredentials: true,
-      //     })
-      //     .then((res) => {
-      //       console.log("token responce", res.data);
-      //     });
-      // } 
-      // else {
-      //   axios
-      //     .post("https://job-assignmnet-server.vercel.app/logout", loggedUser, {
-      //       withCredentials: true,
-      //     })
-      //     .then((res) => {
-      //       console.log(res.data);
-      //     });
-      // }
     });
     return () => {
       unSubscribe();

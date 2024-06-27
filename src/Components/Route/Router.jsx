@@ -67,7 +67,7 @@ const router = createBrowserRouter([
       {
         path: "/assigment",
         element: <Assigment></Assigment>,
-        loader: () => fetch("http://localhost:4000/assigmentCount"),
+        loader: () => fetch("https://job-assignmnet-server.vercel.app/assigmentCount"),
       },
       {
         path: "/ditels/:_id",
@@ -76,13 +76,13 @@ const router = createBrowserRouter([
             <Vew></Vew>
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:4000/assignment"),
+        loader: () => fetch("https://job-assignmnet-server.vercel.app/assignment"),
       },
       {
         path: "/update/:id",
         element: <PrivateRoute><Updade></Updade></PrivateRoute>,
         loader: ({ params }) =>
-          fetch(`http://localhost:4000/assignment/${params.id}`),
+          fetch(`https://job-assignmnet-server.vercel.app/assignment/${params.id}`),
       },
       {
         path: "/takeassigment/:_id",
@@ -93,13 +93,13 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:4000/assignment/${params._id}`),
+          fetch(`https://job-assignmnet-server.vercel.app/assignment/${params._id}`),
       },
       {
         path: "/givemark/:id",
         element: <GiveMark></GiveMark>,
         loader: ({ params }) =>
-          fetch(`http://localhost:4000/bids/${params.id}`),
+          fetch(`https://job-assignmnet-server.vercel.app/bids/${params.id}`),
       },
       {
         path: "/about",
